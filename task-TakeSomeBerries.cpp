@@ -10,4 +10,6 @@ int main()
     
     if ( eated > Masha + Misha) cout<<"Impossible";
     else cout<<ans;
+
+    return 0;
 }
