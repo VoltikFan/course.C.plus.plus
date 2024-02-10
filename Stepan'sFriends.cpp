@@ -1,9 +1,15 @@
 #include <iostream>
 
-using namepace std
+using namespace std;
 
 int main()
 {
-    int stones;
+    int stones, friends;
     cin>>stones;
+
+    friends = stones - 1;
+
+    cout<<friends;
+
+    return 0;
 }
