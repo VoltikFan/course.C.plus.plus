@@ -7,6 +7,10 @@ int main()
     int mandarines, vmboxes, antwort;
     cin>>mandarines>>vmboxes;
 
+    if (mandarines == 0){
+        cout << "0";
+        return 0;
+    }
     if (vmboxes % 13 == 0){
         vmboxes = vmboxes - 1;
     }
