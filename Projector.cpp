@@ -4,16 +4,25 @@ using namespace std;
 
 int main()
 {
-    long long a, b, w, l, y;
+    long long a, b, w, l, y, halfW, halfAB, variant1, variant2, ans1, ans2;
     cin>>a>>b>>w>>l>>y;
 
-    y = w / 2 + max(a , b) / 2 - l;
-    if (l > (w / 2 + max(a, b) / 2)) {
-        y = l - (w / 2 + max(a, b) / 2);
+    halfW = w / 2;
+    halfAB = max(a, b) / 2;
+    
+    variant1 = (halfW + halfAB) - l;
+    if (l > halfW + halfAB) {
+        variant1 = l - (halfW + halfAB);
     }
-    if (y % 1 != 0) {
-        y = y + 1;
+    ans1 = w - variant1;
+
+    if (ans1 % ans1 != 1) {
+        cout<<ans1 + 1;
+        return 0;
     }
 
-    cout << y;
+    cout<<ans1;
+
+    return 0;
+
 }
