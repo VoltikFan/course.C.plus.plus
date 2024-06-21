@@ -60,6 +60,9 @@
         "unordered_map": "cpp",
         "variant": "cpp",
         "vector": "cpp",
-        "algorithm": "cpp"
-    }
+        "algorithm": "cpp",
+        "random": "cpp",
+        "xiosbase": "cpp"
+    },
+    "cmake.configureOnOpen": false
 }
