@@ -11,13 +11,12 @@ int main()
 
     for (int i = 2; i < n; i ++) {
         if (n % i == 0) {
-            b ++;
+            if ()
         }
+
     }
 
     if (b == 0) {
         cout << "Yes";
-    } else {
-        cout << "No";
     }
 }
