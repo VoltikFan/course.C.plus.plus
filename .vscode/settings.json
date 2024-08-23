@@ -63,7 +63,8 @@
         "algorithm": "cpp",
         "random": "cpp",
         "xiosbase": "cpp",
-        "prama_cpp": "c"
+        "prama_cpp": "c",
+        "utility": "cpp"
     },
     "cmake.configureOnOpen": false
 }
