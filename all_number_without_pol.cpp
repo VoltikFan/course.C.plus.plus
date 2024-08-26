@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    int i = 1000;
+    int n = 0;
 
-    while (i <= 9999)
+    for (int i = 1000;i <= 9999;i ++)
     {
         int a = i / 1000 % 10;
         int d = i % 10;
@@ -14,9 +14,11 @@ int main()
         int c = i / 10 % 10;
         
         if (a == d && b == c){
-            cout << i << " ";
+            n ++;
         }
-        i ++;
     }
+
+    cout << 9999 - n - 1000;
+
     return 0;
 }

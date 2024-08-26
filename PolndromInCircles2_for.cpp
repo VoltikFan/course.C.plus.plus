@@ -4,9 +4,7 @@ using namespace std;
 
 int main()
 {
-    int i = 1000;
-
-    while (i <= 9999)
+    for (int i = 1000;i <= 9999;i ++)
     {
         int a = i / 1000 % 10;
         int d = i % 10;
@@ -16,7 +14,6 @@ int main()
         if (a == d && b == c){
             cout << i << " ";
         }
-        i ++;
     }
     return 0;
 }
