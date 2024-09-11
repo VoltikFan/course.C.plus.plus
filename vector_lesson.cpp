@@ -9,7 +9,7 @@ int main() {
     vector<int> fuel2 (4);
     vector<int> fuel3 (4, 0);
     vector<int> fuel4 = {92, 95, 98, 100};
-    // варианты вавода
+    // варианты вывода
     cout << fuel4[3] << endl << endl;
     cout << fuel4.at(3) << endl << endl;
 
