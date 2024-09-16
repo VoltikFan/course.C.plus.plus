@@ -64,7 +64,17 @@
         "random": "cpp",
         "xiosbase": "cpp",
         "prama_cpp": "c",
-        "utility": "cpp"
+        "utility": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "queue": "cpp",
+        "ranges": "cpp",
+        "span": "cpp",
+        "stack": "cpp",
+        "xhash": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp"
     },
     "cmake.configureOnOpen": false
 }
