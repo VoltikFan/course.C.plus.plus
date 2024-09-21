@@ -8,7 +8,7 @@ int main()
     cin >> number;
 
     cout << "The next number for the number " << number << " is " << number + 1 << "." << endl;
-    cout << "The previous number for the number " << number << " is " << number - 1 << "."c;
+    cout << "The previous number for the number " << number << " is " << number - 1 << ".";
     
     return 0;
 }
