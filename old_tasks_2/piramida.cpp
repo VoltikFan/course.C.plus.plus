@@ -4,11 +4,11 @@ using namespace std;
 
 int main()
 {
-    int shar, ant, storona;
-    cin >> shar;
+    int a, ant, storona;
+    cin >> a;
 
 
-    storona = (shar * 2 + 1) * (shar * 2 + 1);
+    storona = (a * 2 + 1) * (a * 2 + 1);
     //ant = 5 + storona ;
 
     cout << storona;
