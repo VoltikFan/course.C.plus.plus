@@ -13,10 +13,10 @@ int main()
 
     for (long long i = 1; i <= sqrt(N); i++) {
         if (N % i == 0) {
-            sum += i;
+            sum ++;
 
             if (i != N / i) {
-                sum += N / i;
+                sum ++;
             }
         }
     }
