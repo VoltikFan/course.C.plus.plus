@@ -12,4 +12,6 @@ int main()
         n /= 10;
     }
     cout << n + last;
+    
+    return 0;
 }
