@@ -4,6 +4,10 @@ using namespace std;
 
 int main()
 {
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    
     long long number1, number2, ant = 0;;
     cin >> number1 >> number2;
 
@@ -13,7 +17,6 @@ int main()
         b /= 2;
 
         int group = 1;
-        //long long binar2 = binar1;
         while (b >= 1) {
             long long binar = b % 2;
             b /= 2;
