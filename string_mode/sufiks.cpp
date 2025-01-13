@@ -17,6 +17,6 @@ int main()
     for (int i = 1; i < text.size(); i++) {
         cout << text.substr(i) << endl;
     }
-    
+     
     return 0;
 }
