@@ -12,7 +12,6 @@ int main()
     string name, surname, email;
     string telefon, place, school;
 
-    
     cout << "Name:" << " ";
     getline(cin, name);
     for (int i = 0; i < name.size(); i++) {
@@ -96,4 +95,43 @@ int main()
         }
     }
 
+    string mark_math, mark_english, mark_german;
+
+    cout << "Your marks:" << " ";
+    cout << endl;
+    cout << "Math" << " ";
+    getline (cin, mark_math);
+    for (int i = 0; i < mark_math.size(); i++) {
+        if (!(mark_math[i] >= 49 && mark_math[i] <= 54)) {
+            cout << endl;
+            cout << "You can't have this mark. Try again" << endl;
+            cout << "Math";
+            getline (cin, mark_math);
+            cout << endl;
+        }
+    }
+
+    cout << "English" << " ";
+    getline (cin, mark_english);
+    for (int i = 0; i < mark_english.size(); i++) {
+        if (!(mark_english[i] >= 49 && mark_english[i] <= 54)) {
+            cout << endl;
+            cout << "You can't have this mark. Try again" << endl;
+            cout << "English";
+            getline (cin, mark_english);
+            cout << endl;
+        }
+    }
+
+    cout << "German" << " ";
+    getline (cin, mark_german);
+    for (int i = 0; i < mark_german.size(); i++) {
+        if (!(mark_german[i] >= 49 && mark_german[i] <= 54)) {
+            cout << endl;
+            cout << "You can't have this mark. Try again" << endl;
+            cout << "German";
+            getline (cin, mark_german);
+            cout << endl;
+        }
+    }
 }
