@@ -134,4 +134,16 @@ int main()
             cout << endl;
         }
     }
+
+    int math, english, german;
+    math = stoi(mark_math);
+    english = stoi(mark_english);
+    german = stoi(mark_german);
+    
+    cout << "Your GPA is" << " " << (math + english + german) / 3;
+    int gpa;
+    if (gpa == 1) {
+        cout << endl;
+        cout << "With your marks you can go anywhere";
+    }
 }
