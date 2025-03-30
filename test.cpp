@@ -5,7 +5,8 @@ int main() {
     vector<int> array;
     int ant = 0;
     for (int i = 0; i != array.size(); i++) {
-      cin >> array;
+      int a;
+      cin >> a;
     }
 
     for (int i = 0; i != array.size(); i++) {
