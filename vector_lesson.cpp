@@ -32,7 +32,7 @@ int main() {
         cout << n << endl; 
     }
 
-    cout << endl;\
+    cout << endl;
     
     //убрать значение
     fuel4.pop_back();
