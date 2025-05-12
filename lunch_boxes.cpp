@@ -2,8 +2,7 @@
 #include <vector>
 using namespace std;
 
-int main()
-{
+int main() {
     int n, m;
     cin >> n >> m;
 
@@ -15,9 +14,9 @@ int main()
     int ant = 0;
 
     for (int i = 0; i < m; i++) {
-        if (n >= k[i]) { 
-            n -= k[i]; 
-            ant++; 
+        if (n >= k[i]) {
+            n -= k[i];
+            ant++;
         }
     }
 
