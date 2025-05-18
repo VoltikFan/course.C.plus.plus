@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main() 
-{
+int main() {
     int n, k;
     string s;
     cin >> n >> k;
@@ -27,5 +26,5 @@ int main()
     }
 
     cout << ant;
-    return 0;
+    //return 0;
 }

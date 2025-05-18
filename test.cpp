@@ -1,32 +1,22 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main() {
-    int n, k;
-    cin >> n >> k;
+    long long n, m;
+    cin >> n >> m;
 
-    string s;
-    cin >> s;
+    long long time = 0;
+    long long pos = n; 
 
-    if (k == 1 && n > 1) {
-        cout << -1;
-        return 0;
-    }
+    while (pos > 1) {
+        time++; 
+        pos--;  
 
-    int changes = 0;
-    for (int i = 1; i < n; ++i) {
-        if (s[i] == s[i - 1]) {
-            ++changes;
-            for (char c = '0'; c < '0' + k; ++c) {
-                if (c != s[i - 1] && (i + 1 == n || c != s[i + 1])) {
-                    s[i] = c;
-                    break;
-                }
-            }
+        if (time % m == 0) { 
+            pos = (pos + 1) / 2;
         }
     }
 
-    cout << changes;
+    cout << time;
     return 0;
 }
