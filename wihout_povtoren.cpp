@@ -1,12 +1,11 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-int main() {
+int main() 
+{
     int n, k;
-    cin >> n >> k;
-
     string s;
+    cin >> n >> k;
     cin >> s;
 
     if (k == 1 && n > 1) {
@@ -14,11 +13,11 @@ int main() {
         return 0;
     }
 
-    int changes = 0;
-    for (int i = 1; i < n; ++i) {
+    int ant = 0;
+    for (int i = 1; i < n; i++) {
         if (s[i] == s[i - 1]) {
-            ++changes;
-            for (char c = '0'; c < '0' + k; ++c) {
+            ant++;
+            for (char c = '0'; c < '0' + k; c++) {
                 if (c != s[i - 1] && (i + 1 == n || c != s[i + 1])) {
                     s[i] = c;
                     break;
@@ -27,6 +26,6 @@ int main() {
         }
     }
 
-    cout << changes;
+    cout << ant;
     return 0;
 }
