@@ -1,23 +1,37 @@
 #include <iostream>
+#include <string>
+#include <stack>
 using namespace std;
 
 int main() {
-    long long n, k;
-    cin >> n >> k;
+    string function;
+    string comandPush = "push ";
+    //int value;
+    // const int size = 100;
+    // int j = 0;
+    stack<int> s;
+    while (true) {
+        getline(cin, function);
+        int res = function.find("push");
+        if (res != string::npos)
+            function.erase(0, comandPush.size());
+      	    cout << endl << function;
+        // if () {
+        //     cin >> value; 
+        //     s.push(value);
+        //     //j++;
+        //     // cout << j << endl;
+        // } else {
+        //     // string function2;
+        //     // cin >> function2;
 
-    int count = 0;
-
-    for (int d = 1; d <= 9; ++d) {
-        long long num = d;
-        while (num <= n) {
-            count++;
-            if (num == k) {
-                cout << count;
-                return 0;
-            }
-            num = num * 10 + d;
-        }
+        //     if (function == "pop") {
+        //         cout << s.top();
+        //         s.pop();
+        //         // j--;
+        //     }
+        // }
     }
+    
 
-    return 0;
 }
